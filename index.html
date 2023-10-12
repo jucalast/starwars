@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<div id="conteudo">
+<body>
+    <main></main>
+    <header>
+        <img src="images\LogoEmpire.png" alt="logo">
+        <h1>Star Wars Filmes</h1>
+            <input type="text" class="search-input" placeholder="Procure seu filme favorito...">
+            <button type="submit" class="search-button">Manda ver</button>
+    </header>
+
+    <div class="film-nome">Todos os Filmes</div>
+    <div class="film-list"></div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalButton" class="close">&times;</span>
+          <div style="width: 700px; height: 500px; position: relative; bottom: 80px; left: 20px;" class="content">
+             <h2  id="modalTitle" style= " display:flex; justify-content: center; white-space:nowrap; position: relative; top: 50px;"></h2>
+                <p style= "overflow-wrap: break-word; text-align: center;" id="modalDetails"></p>
+            </div>
+                <div id="imputs" class="imputsmodal">    
+                <input  type="text" class="characterInput2" id="characterInput" placeholder="Digite o nome do personagem">
+                    <button id="searchButton" class="searchButton1">Buscar</button>
+                    <button id="btnPersonagens">Personagens</button>
+                    
+            </div>
+
+            <div style=" position: relative; left: 310px;"  id="characterInfo" class="characterInfo">
+                <img id="characterImage" src="">
+            <p id="characterDetails"></p>
+
+            <div id="personagensList" class="personagens-list">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <h3>Trailer de Star Wars</h3>
+     <!-- Coloque o código de incorporação do vídeo do YouTube abaixo -->
+    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/MpkrMqmmy5k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="rodapé" ></div>
+    <script src="script.js"></script>
+</main>
+</body>
+
+</html>

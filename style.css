@@ -1,0 +1,337 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(15px); /* Aplica o efeito de desfoque */
+  background-color: rgba(30, 30, 30, 0.336); /* Define a cor de fundo com transparência */
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)); /* Define as imagens de fundo */
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  padding: 10px; /* Opcional */
+  z-index: 9999;
+}
+
+
+h1 {
+    position: relative;
+    left: 70px;
+}
+
+img {
+    width: 70px;
+    position: relative;
+    left: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+.search-input {
+    position: relative;
+    left: 1000px;  
+    padding: 10px;
+    width: 500px;
+    font-size: 22px;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+button {
+    position: relative;
+    left: 1010px;
+    bottom: 0px;
+    margin: 10px;
+    font-size: 22px;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(240, 32, 32);
+    color: white; 
+    cursor: pointer;  
+}
+
+.film-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos sejam quebrados em várias linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    position: relative;
+    top: 150px;
+  }
+  
+  .film-card {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      margin: 80px; /* Adiciona margem para separar os cards */
+      margin-left: 30px;
+      text-align:center; /* Centraliza o texto */
+      position: relative; /* Define a posição como relativa para que possamos posicionar o título */
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 350px;
+      width: 230px;
+      border-radius: 10px;
+    }
+
+    .film-nome {
+      position: relative;
+      top: 190px;
+      left: 120px;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff; /* Adiciona um leve brilho ao texto */
+      color: white;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .imgElement {
+      position: relative;
+      left: 0px;
+      width: 300px;
+      top: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px rgba(231, 231, 231, 0.804);
+    }
+
+  
+  /* Estilo para o modal */
+#myModal {
+  /* Defina a posição como "fixed" para fixar o modal na janela do navegador */
+  position: fixed;
+  /* Defina o posicionamento como "top: 0" e "left: 0" para alinhar o modal no canto superior esquerdo da janela do navegador */
+  top: 0;
+  left: 0;
+  /* Defina a largura e altura do modal */
+  width: 100%;
+  height: 100%;
+  /* Defina um fundo semi-transparente para o modal */
+  z-index: 9999;
+  /* Adicione estilos de alinhamento vertical e horizontal para centralizar o conteúdo do modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px); /* Aplica o efeito de desfoque */
+  background-color: rgba(30, 30, 30, 0.336); /* Define a cor de fundo com transparência */
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)); /* Define as imagens de fundo */
+  max-height: 6000px; /* Defina a altura máxima do modal de acordo com sua preferência */
+  
+}
+
+.modal-content {
+  display: flex;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+  color: white;
+  margin: 100px;
+  padding: 100px;
+  border-radius: 50px;
+  height: 60%;
+  width: 83%;
+}
+
+.close {
+  font-size: 50px;
+  color: #666;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+#filmDetails {
+  font-size: 18px;
+  color: #c02222;
+  margin-bottom: 20px;
+}
+
+#characterImage {
+  position: relative;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+#characterDetails {
+  flex: 1;
+  margin-right: 50px;
+}
+
+#btnPersonagens {
+  
+  background-color: #171717;
+  color: #fff;
+  padding: 20px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 910px;
+}
+
+.personagens-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.character-card {
+ position: relative;
+  top: 100;
+  width: 40px;
+  height: 80px;
+  margin: 40px;
+  padding: 40px;
+  background-color: #494949be;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.characterInput2 {
+  position: relative;
+  left: 900px;  
+  padding: 10px;
+  width: 500px;
+  font-size: 22px;
+  border-radius: 100px;
+  border: none;
+  padding: 20px;
+  background-color: #151515;
+  cursor: pointer;
+}
+
+.searchButton1 {
+  padding: 20px 40px;
+  background-color: #151515;
+  color: rgb(237, 40, 40);
+  position: relative;
+  left: 910px;
+  cursor: pointer;
+}
+
+#modalTitle {
+  font-size: 50px; /* Define o tamanho da fonte */
+  color: #d92323; /* Define a cor do texto */ 
+  
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#modalDetails {
+  font-size: 30px;
+}
+
+#characterInfo {
+  display: none;
+  position:relative;
+  top:120px;
+  width: 650px;
+  height: 400px; /* Define a largura da div */
+ background-image: linear-gradient(to right, rgb(97, 7, 7), #ee0505); /* Gradiente de vermelho para azul, da esquerda para a direita */
+  padding: 30px; /* Define o espaçamento interno da div */
+  text-align: center; /* Define o alinhamento do texto no centro */
+  border-radius: 40px;
+}
+
+#characterImage {
+  width:200px; /* Define a largura da imagem */
+  height: 200px; /* Define a altura da imagem */
+  object-fit: cover; /* Define como a imagem é ajustada dentro do espaço da div */
+  border-radius: 50%; /* Define o raio das bordas da imagem para criar um efeito arredondado */
+  margin-bottom: 10px; /* Define a margem inferior da imagem */
+  padding: 30px;
+  position: relative;
+  left: 10px;
+}
+
+#characterDetails {
+  font-size: 35px; /* Define o tamanho da fonte do parágrafo */
+  color: #f8f8f8; /* Define a cor do texto do parágrafo */
+  margin-top: 0px; /* Remove a margem superior padrão do parágrafo */
+  margin-left: 60px;
+}
+
+.imputsmodal {
+  position: fixed;
+  left: 350px;
+  bottom: 780px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-around;
+}
+
+#video-container {
+  position: relative;
+  width: 640px; /* Largura do vídeo */
+  height: 360px; /* Altura do vídeo */
+}
+
+#video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('images/Black Minimalist Desktop Wallpaper.png');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+h3 {
+  position: relative;
+  top: 210px;
+  left: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #fff; /* Adiciona um leve brilho ao texto */
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* Estilos para a div do trailer */
+/* Estilos para a div do trailer */
+.iframe {
+  position: relative;
+  top: 200px;
+  left: 105px;
+  width: 2025px;
+  height: 860px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: #ffffff 3px 3px 90px 1px;
+}
+
+.rodapé {
+  width: 500px;
+  height: 600px;
+}
